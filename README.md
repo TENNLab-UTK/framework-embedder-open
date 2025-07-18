@@ -4,16 +4,16 @@ This is work being done by Bryson Gullett (bgullet1@vols.utk.edu) and Jackson
 Mowry (jmowry4@vols.utk.edu).
 
 ## Table of Contents
-- [Overview](#header-overview)
-- [Motivation and Goals](#header-motivation-and-goals)
-- [Basic Usage](#header-basic-usage)
-    - [Setup](#header-setup)
-    - [Compile](#header-compile)
-    - [Run](#header-run)
-    - [Options](#header-options)
-- [Generated C API](#header-generated-c-api)
-- [Limitations](#header-limitations)
-- [Examples](#header-examples)
+- [Overview](#overview)
+- [Motivation and Goals](#motivation-and-goals)
+- [Basic Usage](#basic-usage)
+    - [Setup](#setup)
+    - [Compile](#compile)
+    - [Run](#run)
+    - [Options](#options)
+- [Generated C API](#generated-c-api)
+- [Limitations](#limitations)
+- [Examples](#examples)
 
 
 ------------------------------------------------------------
@@ -140,7 +140,7 @@ Perform the following three simple steps to use the `framework_embedder`:
 
     The following types of TENNLab JSON objects are accepted as input to
     `framework_embedder`, assuming they are within the limitations listed in the
-    [Limitations](#header-limitations) section below:
+    [Limitations](#limitations) section below:
 
     - Spiking neural network (SNN)
 
@@ -148,7 +148,7 @@ Perform the following three simple steps to use the `framework_embedder`:
     errors occur.
     
     Note that the generated C code may be redirected to a C header
-    file to act as a header-only SNN simulation library that can be easily
+    file to act as a only SNN simulation library that can be easily
     integrated into a C application in a modular way. For example, this may be
     done with:
 
@@ -222,4 +222,4 @@ inputs SNN JSON:
 
 The following link to markdown files that contain examples/tutorials for the framework embedder:
 
-    - [Using RISP to calculate XOR](markdown/xor_example.md)
+- [Using RISP to calculate XOR](markdown/xor_example.md)
