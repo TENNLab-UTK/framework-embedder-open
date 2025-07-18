@@ -149,6 +149,15 @@ Perform the following three simple steps to use the `framework_embedder`:
 
     `bin/framework_embedder < <path/to/tennlab/json/file> > my_c_header_file.h`
 
+4. ### Options
+
+    The command line argument options for `framework_embedder` are as follows:
+
+    - `-p`, `--processor` = which processor you'd like code to be generated for;
+      the default `risp` setting describes sparse RISP while `rispSoA` describes
+      dense RISP; use dense RISP if you wish to save memory at the cost of
+      event-based performance, <risp\|rispSoA> (string [=risp])
+
 
 ------------------------------------------------------------
 
@@ -189,7 +198,8 @@ inputs SNN JSON:
 - Only SNN JSON for supported neuroprocessors may be used. The following are the
   only neuroprocessors currently supported:
 
-    - RISP
+    - Sparse RISP (the conventional event-based version)
+    - Dense RISP (a non-event-based version that stores internal data more compactly)
 
 - RISP does not support the following parameters:
 
