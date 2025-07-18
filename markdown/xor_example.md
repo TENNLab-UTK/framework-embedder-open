@@ -118,7 +118,7 @@ UNIX> mkdir tmp_xor_example ; bin/framework_embedder < networks/xor.json > tmp_x
 
 And that's it! We now have a dependency-free, lightweight C library in `tmp_xor_example/xor.h`, whose sole purpose is to simulate just the XOR SNN model. Notice that it's just a single file!
 
-We can now make a simple main program to test out `tmp_xor_example/xor.h`:
+`tmp_xor_example/xor.h` can be compiled for any piece of hardware that has a C compiler+toolchain (e.g. a microcontroller). For the sake of this tutorial, we can now make a simple main program to test out `tmp_xor_example/xor.h` on our own machine:
 
 ```
 UNIX> echo "#include \"xor.h\"" > tmp_xor_example/xor_test.c ; \
