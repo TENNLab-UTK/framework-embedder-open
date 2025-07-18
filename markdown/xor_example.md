@@ -1,6 +1,6 @@
 # XOR Example for Using the TENNLab Neuromorphic Framework Embedder
 
-This tutorial for the TENNLab neuromorphic framework embedder tool (AKA the `framework_embedder`) covers an example XOR SNN model and how it may be converted into a simple C library.
+This tutorial for the TENNLab neuromorphic framework embedder tool (AKA the `framework_embedder`) covers an example XOR SNN model and how it may be converted into a simple C library. The only prerequisites for this tutorial are that you have the [open-source TENNLab neuromorphic framework](https://github.com/TENNLab-UTK/framework-open) and can compile+run it successfully.
 
 
 ------------------------------------------------------------
